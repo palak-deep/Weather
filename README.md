@@ -1,34 +1,40 @@
-Weather App
+ Weather App – Python & OpenWeatherMap API
+This is a simple command-line weather application built using Python and the OpenWeatherMap API. It allows users to fetch real-time weather data (temperature, humidity, wind speed, and description) for any city in the world.
 
-Overview:
-This project is a simple Python-based command-line application that fetches real-time weather information for any city using the OpenWeatherMap API. It displays key weather parameters like temperature, humidity, wind speed, and weather conditions in an easy-to-read format.
+ Features
+- Fetch current weather details by city name
+- Displays:
+  - Temperature (in Celsius)
+  - Humidity
+  - Wind speed
+  - Weather description
+- Error handling for invalid cities or API issues
 
-Features:
-Fetches current weather data from OpenWeatherMap API.
-Displays temperature in Celsius, humidity percentage, wind speed in km/h, and weather description.
-Handles errors gracefully, such as invalid city names or network issues.
-Lightweight and easy-to-use command-line interface.
+ Tech Stack
+- **Language**: Python
+- **Library**: [`requests`](https://pypi.org/project/requests/)
+- **API**: [OpenWeatherMap](https://openweathermap.org/api)
 
-Technologies Used:
-Python: Core programming language.
-Requests: For making HTTP requests to the weather API.
-OpenWeatherMap API: Provides reliable real-time weather data.
+Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/palak-deep/weather-app.git
+   cd weather-app
+Install dependencies:                                                                                                                      
+     -pip install requests
 
-How It Works:
-The user inputs a city name.
-The app sends a request to the OpenWeatherMap API with the city name and API key.
-The API returns current weather data in JSON format.
-The app parses this data and displays temperature, humidity, wind speed, and a brief weather description.
-If the city is not found or an error occurs, the app notifies the user.
+(Optional) Create and activate a virtual environment:                                                                                      
+python -m venv venv                                                                                                                        
+source venv/bin/activate    # On Windows: venv\Scripts\activate
 
-Usage:
-Run the Python script.
-When prompted, enter the city name.
-View the displayed weather information in the terminal.
+Setup                                                                                                                                      
+Get your API key from OpenWeatherMap.                                                                                                      
+Replace the api_key value inside the script with your key:                                                                                 
+api_key = "YOUR_API_KEY_HERE"                                                                                                               
 
-Future Improvements:
-Add support for extended forecasts (daily/weekly weather).
-Implement a GUI using frameworks like Tkinter or Streamlit.
-Allow temperature unit selection (Celsius, Fahrenheit).
-Cache recent queries to reduce API calls and improve speed.
+Usage                                                                                                                                      
+Run the script:                                                                                                                      python weather_app.py                                                                                                                      
+You'll be prompted to enter the city name.                                                                                                 The app will display the current weather data for that city.
 
+ License
+This project is open-source and free to use for educational and personal purposes available under the MIT License.
